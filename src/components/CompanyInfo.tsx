@@ -74,24 +74,18 @@ const CompanyInfo: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative h-[500px] overflow-hidden rounded-xl border border-black">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3"
-                alt="Global team collaboration"
-                className="absolute inset-0 w-full h-full object-cover object-center"
-              />
-              
-              <div className="absolute bottom-0 left-0 right-0 p-8 z-20 text-white">
+            <div className="relative h-[500px] rounded-xl border border-black bg-white flex items-end overflow-hidden">
+              <div className="w-full p-8 z-20">
                 <div className="grid grid-cols-3 gap-4 text-center">
-                  <div className="p-4 rounded-lg bg-white/90 backdrop-blur-sm text-black border border-black">
+                  <div className="p-4 rounded-lg bg-white shadow-md text-black border border-black">
                     <div className="text-3xl font-bold">175+</div>
                     <div className="text-sm">Countries</div>
                   </div>
-                  <div className="p-4 rounded-lg bg-white/90 backdrop-blur-sm text-black border border-black">
+                  <div className="p-4 rounded-lg bg-white shadow-md text-black border border-black">
                     <div className="text-3xl font-bold">100M+</div>
                     <div className="text-sm">Downloads</div>
                   </div>
-                  <div className="p-4 rounded-lg bg-white/90 backdrop-blur-sm text-black border border-black">
+                  <div className="p-4 rounded-lg bg-white shadow-md text-black border border-black">
                     <div className="text-3xl font-bold">10+</div>
                     <div className="text-sm">Apps</div>
                   </div>
