@@ -1,13 +1,45 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import HeroSection from '@/components/HeroSection';
+import CompanyInfo from '@/components/CompanyInfo';
+import ProductsSection from '@/components/ProductsSection';
+import InvestorsSection from '@/components/InvestorsSection';
+import ContactSection from '@/components/ContactSection';
+import LanguageToggle from '@/components/LanguageToggle';
+import { LanguageProvider } from '@/context/LanguageContext';
 
 const Index = () => {
+  // Add scroll reveal effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const revealElements = document.querySelectorAll('.reveal');
+      const windowHeight = window.innerHeight;
+      
+      revealElements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          element.classList.add('active');
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check on initial load
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <LanguageProvider>
+      <div className="min-h-screen overflow-x-hidden">
+        <LanguageToggle />
+        <HeroSection />
+        <CompanyInfo />
+        <ProductsSection />
+        <InvestorsSection />
+        <ContactSection />
       </div>
-    </div>
+    </LanguageProvider>
   );
 };
 
