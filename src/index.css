@@ -133,6 +133,11 @@
   .notion-button-outline {
     @apply px-5 py-2 bg-transparent text-black border border-black rounded-md hover:bg-black/5 transition-all duration-300 font-medium;
   }
+  
+  /* Custom scrollbar styles */
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* For smooth reveal animations */
@@ -183,4 +188,3 @@
 
 /* Add Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
