@@ -30,31 +30,26 @@ const ContactSection: React.FC = () => {
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight text-black">
             {t('contact.title')}
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             {t('contact.subtitle')}
           </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-lg mx-auto"
-        >
-          <div className="bg-white text-black p-8 rounded-xl border border-black hover:shadow-lg transition-all duration-300">
-            <div className="flex items-center mb-6">
-              <div className="p-3 rounded-lg bg-gray-100 mr-4">
-                <Mail className="text-black" size={24} />
-              </div>
-              <h3 className="font-semibold text-lg">{t('contact.email')}</h3>
-            </div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center items-center mt-8"
+          >
             <a 
               href="mailto:contact@pointone.tech" 
-              className="text-xl font-medium text-black hover:underline transition-all duration-300 flex justify-center"
+              className="flex items-center gap-2 text-xl font-medium text-black hover:text-gray-600 transition-all duration-300"
             >
+              <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center">
+                <Mail className="text-white" size={20} />
+              </div>
               contact@pointone.tech
             </a>
-          </div>
+          </motion.div>
         </motion.div>
         
         <motion.div 
