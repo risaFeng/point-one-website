@@ -81,8 +81,8 @@ const CompanyHistory: React.FC = () => {
                 </div>
                 
                 <div className="md:w-0 flex justify-center">
-                  <div className="w-10 h-10 rounded-full bg-white border border-black flex items-center justify-center z-10">
-                    <Clock className="text-black" size={20} />
+                  <div className="w-10 h-10 rounded-full bg-black border border-black flex items-center justify-center z-10">
+                    <Clock className="text-white" size={20} />
                   </div>
                 </div>
                 
