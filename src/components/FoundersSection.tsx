@@ -49,26 +49,30 @@ const FoundersSection: React.FC = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {founders.map((founder, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col md:flex-row"
+              className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
             >
-              <div className="md:w-1/3 relative">
-                <div className="aspect-[3/4] h-full">
-                  <img 
-                    src={founder.image} 
-                    alt={founder.name} 
-                    className="w-full h-full object-cover object-center"
-                  />
+              <div className="p-6 pb-0 text-center">
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{founder.name}</h3>
+              </div>
+              <div className="p-6 pt-3 pb-0 flex-grow">
+                <div className="w-full max-w-[240px] mx-auto">
+                  <div className="aspect-[3/4] w-full relative rounded-lg overflow-hidden">
+                    <img 
+                      src={founder.image} 
+                      alt={founder.name} 
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="md:w-2/3 p-6 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">{founder.name}</h3>
+              <div className="p-6 text-center">
                 <p className="text-gray-700 leading-relaxed">
                   {founder.bio}
                 </p>
