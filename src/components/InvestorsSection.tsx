@@ -1,5 +1,5 @@
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
 
@@ -12,35 +12,35 @@ const InvestorsSection: React.FC = () => {
   const investors = [
     { 
       name: 'Peak XV',
-      logoSrc: '/placeholder.svg'
+      logoSrc: '/lovable-uploads/e79be1ac-208b-47e6-b984-86bf9950ab35.png'
     },
     { 
       name: 'Sky9 Capital',
-      logoSrc: '/placeholder.svg'
+      logoSrc: '/lovable-uploads/a1e1fff0-9e64-46b9-a0f9-d9280da746e7.png'
     },
     { 
       name: 'Source Code Capital',
-      logoSrc: '/placeholder.svg'
+      logoSrc: '/lovable-uploads/91f3d766-ede0-42e8-a6cb-cb594fa4a9e3.png'
     },
     { 
       name: 'Qiming Ventures',
-      logoSrc: '/placeholder.svg'
+      logoSrc: '/lovable-uploads/eb7878da-05f1-4bfd-ad91-b5e97b06084b.png'
     },
     { 
       name: 'Northern Light VC',
-      logoSrc: '/placeholder.svg'
+      logoSrc: '/lovable-uploads/36ce7ad1-46ad-47ae-af1c-494ca26e3500.png'
     },
     { 
       name: 'NetEase',
-      logoSrc: '/placeholder.svg'
+      logoSrc: '/lovable-uploads/a4c92098-4d77-4776-b96f-25c04c7f54bc.png'
     },
     { 
       name: 'ClearVue',
-      logoSrc: '/placeholder.svg'
+      logoSrc: '/lovable-uploads/15a60af6-204b-47e8-93be-a5d5a56b9e64.png'
     },
     { 
       name: 'GraniteAsia',
-      logoSrc: '/placeholder.svg'
+      logoSrc: '/lovable-uploads/e12bfe27-1544-49bc-9367-700cbdc12d66.png'
     }
   ];
 
@@ -86,14 +86,11 @@ const InvestorsSection: React.FC = () => {
                 transition={{ duration: 0.3 }}
               >
                 <div className="w-full h-24 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-lg transition-all p-4">
-                  <div className="flex flex-col items-center justify-center">
-                    <img 
-                      src={investor.logoSrc}
-                      alt={`${investor.name} logo`}
-                      className="max-h-full max-w-full object-contain transition-all duration-300"
-                    />
-                    <span className="mt-2 text-sm text-gray-700 font-medium">{investor.name}</span>
-                  </div>
+                  <img 
+                    src={investor.logoSrc}
+                    alt={`${investor.name} logo`}
+                    className="max-h-full max-w-full object-contain transition-all duration-300"
+                  />
                 </div>
               </motion.div>
             ))}
