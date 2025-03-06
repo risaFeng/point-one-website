@@ -40,7 +40,7 @@ const FoundersSection: React.FC = () => {
           <div className="inline-block mb-3">
             <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full flex items-center justify-center">
               <Users className="inline-block mr-1.5" size={14} />
-              {t('founders.subtitle')}
+              Founding Team
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight">
