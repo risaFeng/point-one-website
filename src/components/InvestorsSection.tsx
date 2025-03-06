@@ -40,35 +40,35 @@ const InvestorsSection: React.FC = () => {
   const investors = [
     { 
       name: 'Peak XV',
-      logoSrc: '/lovable-uploads/7efee26b-f892-4c10-8a1e-6557429c3347.png'
+      logoSrc: '/lovable-uploads/cbeb1673-5f29-486b-9abd-541b03cdc3cd.png'
     },
     { 
       name: 'Sky9 Capital',
-      logoSrc: '/lovable-uploads/aa3fde85-058a-4819-a8ee-17f9d6b48c1f.png'
+      logoSrc: '/lovable-uploads/49cc185a-81b3-48fa-880f-9e892dd9827d.png'
     },
     { 
       name: 'Source Code Capital',
-      logoSrc: '/lovable-uploads/1050abab-e51d-4cb9-86f1-cd135416b71f.png'
+      logoSrc: '/lovable-uploads/805edd2f-c4d0-4484-bf2b-cb93d4c7895d.png'
     },
     { 
       name: 'Qiming Ventures',
-      logoSrc: '/lovable-uploads/73a67ba5-f809-42a5-9841-b531f7729c86.png'
+      logoSrc: '/lovable-uploads/989b1633-5fef-4cc7-8996-e3eef68452e2.png'
     },
     { 
       name: 'Northern Light VC',
-      logoSrc: '/lovable-uploads/99a55e2b-0137-47fd-9862-faa7918b9526.png'
+      logoSrc: '/lovable-uploads/8978db89-bc10-41af-83b5-75f9624a59ac.png'
     },
     { 
       name: 'NetEase',
-      logoSrc: '/lovable-uploads/2a909bd0-ab9b-4351-9ffc-044cb67a36e0.png'
+      logoSrc: '/lovable-uploads/978d4854-f1ea-428f-81d6-91111a01d208.png'
     },
     { 
       name: 'ClearVue Partners',
-      logoSrc: '/lovable-uploads/597a8eee-81b7-4214-ad2e-f844ef6ee178.png'
+      logoSrc: '/lovable-uploads/bb83d9dc-e3a3-4f21-a921-02c4f4f8bb6f.png'
     },
     { 
       name: 'GraniteAsia',
-      logoSrc: '/lovable-uploads/7666df85-7dfd-435f-93a6-da81bcc55b56.png'
+      logoSrc: '/lovable-uploads/77d32076-d0e8-4a6c-aba9-3c48141dd01c.png'
     }
   ];
 
