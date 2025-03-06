@@ -9,46 +9,46 @@ const InvestorsSection: React.FC = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   const [imgErrors, setImgErrors] = useState<{[key: string]: boolean}>({});
 
-  // Investor logos array with working image paths
+  // Investor logos array with the uploaded image
   const investors = [
     { 
       name: 'Peak XV',
-      logo: '/placeholder.svg', 
+      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png', 
       fallback: '/placeholder.svg'
     },
     { 
       name: 'Sky9 Capital',
-      logo: '/placeholder.svg',
+      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'Source Code Capital',
-      logo: '/placeholder.svg',
+      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'Qiming Ventures',
-      logo: '/placeholder.svg',
+      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'Northern Light VC',
-      logo: '/placeholder.svg',
+      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'NetEase',
-      logo: '/placeholder.svg',
+      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'ClearVue',
-      logo: '/placeholder.svg',
+      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'GraniteAsia',
-      logo: '/placeholder.svg',
+      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
       fallback: '/placeholder.svg'
     }
   ];
@@ -102,9 +102,10 @@ const InvestorsSection: React.FC = () => {
               >
                 <div className="w-full h-24 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-lg transition-all p-4">
                   <img 
-                    src={investor.logo} 
+                    src={imgErrors[index] ? investor.fallback : investor.logo}
                     alt={`${investor.name} logo`}
-                    className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    onError={() => handleImageError(index)}
+                    className="max-h-full max-w-full object-contain transition-all duration-300"
                   />
                 </div>
               </motion.div>
