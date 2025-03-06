@@ -43,9 +43,9 @@ const ProductsSection: React.FC = () => {
   ];
 
   return (
-    <section id="products" className="py-24 px-4 sm:px-6 lg:px-8 bg-black text-white relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:20px_20px]"></div>
+    <section id="products" className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
+      {/* Subtle dots background */}
+      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px] opacity-30"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div 
@@ -56,15 +56,15 @@ const ProductsSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full flex items-center justify-center">
+            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full flex items-center justify-center">
               <Sparkles className="inline-block mr-1.5" size={14} />
               {t('ai.powered')}
             </span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight text-black">
             {t('products.title')}
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             {t('products.subtitle')}
           </p>
         </motion.div>
@@ -76,7 +76,7 @@ const ProductsSection: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.5, delay: product.delay }}
-              className="group relative rounded-xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300"
+              className="group relative rounded-xl overflow-hidden border border-gray-200 hover:border-black transition-all duration-300 bg-black text-white"
             >
               <div className="relative p-8 flex flex-col h-full">
                 <div className="mb-6 flex justify-between items-start">
@@ -107,7 +107,7 @@ const ProductsSection: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="mt-20 p-8 rounded-xl border border-white/10 bg-black/50"
+          className="mt-20 p-8 rounded-xl border border-gray-200 bg-black text-white"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="p-4">

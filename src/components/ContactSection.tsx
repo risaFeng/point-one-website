@@ -33,9 +33,9 @@ const ContactSection: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-black text-white relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:20px_20px]"></div>
+    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
+      {/* Subtle dots background */}
+      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px] opacity-30"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div 
@@ -46,14 +46,14 @@ const ContactSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full">
+            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
               {t('get.in.touch')}
             </span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight text-black">
             {t('contact.title')}
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             {t('contact.subtitle')}
           </p>
         </motion.div>
@@ -65,7 +65,7 @@ const ContactSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white text-black p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
+              className="bg-white text-black p-8 rounded-xl border border-gray-200 hover:border-black transition-all duration-300 flex flex-col"
             >
               <div className="flex items-center mb-4">
                 <div className="p-3 rounded-lg bg-gray-100 mr-4">
@@ -100,7 +100,7 @@ const ContactSection: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <footer>
+          <footer className="bg-black text-white p-10 rounded-xl">
             <div className="flex justify-center mb-6">
               <img 
                 src="/lovable-uploads/e5584db9-2ecc-46c8-9de8-27652bd787b1.png" 
