@@ -12,8 +12,8 @@ const translations = {
   // Hero Section
   'hero.title.zh': 'Point One',
   'hero.title.en': 'Point One',
-  'hero.subtitle.zh': '全球移动娱乐游戏与AI工具领域的创新者',
-  'hero.subtitle.en': 'Innovator in Global Mobile Gaming & AI Tools',
+  'hero.subtitle.zh': '全球移动娱乐游戏与AI消费产品领域的创新者',
+  'hero.subtitle.en': 'Innovator in Global Mobile Gaming & AI Consumer Products',
   'hero.cta.zh': '了解更多',
   'hero.cta.en': 'Learn More',
   
@@ -22,8 +22,8 @@ const translations = {
   'about.title.en': 'About Us',
   'about.subtitle.zh': '专注于全球移动娱乐与AI技术的融合',
   'about.subtitle.en': 'Focused on the fusion of global mobile entertainment and AI technology',
-  'about.description.zh': 'Point One是一家全球领先的科技公司，专注于移动娱乐游戏与人工智能领域。我们的使命是通过创新技术赋能全球用户，打破地域与文化的限制。凭借强大的AI研发团队和全球化视野，我们成功开发了10多款应用产品，覆盖全球175个国家，产品总下载量突破1亿次。我们的AI游戏UGC平台让玩家从游戏参与者转变为内容创作者，而我们的全球AI应用则致力于消除语言障碍，促进世界各地用户的无缝交流与连接。',
-  'about.description.en': 'Point One is a globally leading technology company focused on mobile entertainment games and artificial intelligence. Our mission is to empower users worldwide through innovative technology, breaking geographical and cultural limitations. With a powerful AI R&D team and global vision, we have successfully developed over 10 application products, covering 175 countries worldwide with total downloads exceeding 100 million. Our AI game UGC platform transforms players from game participants into content creators, while our global AI applications are dedicated to eliminating language barriers and facilitating seamless communication and connection among users worldwide.',
+  'about.description.zh': 'Point One是一家全球领先的科技公司，专注于移动娱乐游戏与人工智能领域。我们的使命是通过创新技术赋能全球用户，打破地域与文化的限制。凭借强大的AI研发团队和全球化视野，我们成功开发了10多款应用产品，覆盖全球175个国家，产品总下载量突破1亿次。我们的AI游戏UGC平台让玩家从游戏参与者转变为内容创作者，而我们的全球AI消费产品则致力于消除语言障碍，促进世界各地用户的无缝交流与连接。',
+  'about.description.en': 'Point One is a globally leading technology company focused on mobile entertainment games and artificial intelligence. Our mission is to empower users worldwide through innovative technology, breaking geographical and cultural limitations. With a powerful AI R&D team and global vision, we have successfully developed over 10 application products, covering 175 countries worldwide with total downloads exceeding 100 million. Our AI game UGC platform transforms players from game participants into content creators, while our global AI consumer products are dedicated to eliminating language barriers and facilitating seamless communication and connection among users worldwide.',
   
   // Company History Section
   'history.title.zh': '发展历程',
@@ -52,8 +52,8 @@ const translations = {
   // Awards Section
   'awards.title.zh': '获奖经历',
   'awards.title.en': 'Awards & Recognition',
-  'awards.subtitle.zh': '在全球移动娱乐游戏和 AI 工具领域，Point One 凭借产品 BUD 屡获殊荣，彰显强大实力。',
-  'awards.subtitle.en': 'In the field of global mobile entertainment games and AI tools, Point One has won numerous awards with its product BUD, demonstrating its strong capabilities.',
+  'awards.subtitle.zh': '在全球移动娱乐游戏和AI消费产品领域，Point One凭借产品BUD屡获殊荣，彰显强大实力。',
+  'awards.subtitle.en': 'In the field of global mobile entertainment games and AI consumer products, Point One has won numerous awards with its product BUD, demonstrating its strong capabilities.',
   'awards.2022.title.zh': '2022年',
   'awards.2022.title.en': '2022',
   'awards.2022.item1.zh': '2022年6月，BUD联合创始人冯文慧入选创业邦"30位30岁以下创业先锋"，展现出公司团队的创新活力。',
@@ -100,14 +100,14 @@ const translations = {
   // Products Section
   'products.title.zh': '我们的产品',
   'products.title.en': 'Our Products',
-  'products.subtitle.zh': '创新AI工具与游戏体验',
-  'products.subtitle.en': 'Innovative AI Tools & Gaming Experiences',
+  'products.subtitle.zh': '创新AI消费产品与游戏体验',
+  'products.subtitle.en': 'Innovative AI Consumer Products & Gaming Experiences',
   'products.item1.title.zh': 'AI游戏UGC平台',
   'products.item1.title.en': 'AI Game UGC Platform',
   'products.item1.description.zh': '赋予玩家创造能力，使其从单纯的游戏参与者转变为内容创作者',
   'products.item1.description.en': 'Empowering players with creative abilities, transforming them from mere game participants to content creators',
-  'products.item2.title.zh': '全球AI应用',
-  'products.item2.title.en': 'Global AI Applications',
+  'products.item2.title.zh': '全球AI消费产品',
+  'products.item2.title.en': 'Global AI Consumer Products',
   'products.item2.description.zh': '以技术打破语言文化壁垒，促进全球用户的连接与交流',
   'products.item2.description.en': 'Breaking language and cultural barriers through technology, facilitating global connection and communication',
   
@@ -154,8 +154,8 @@ const translations = {
   'cultural.context.en': 'Cultural context awareness',
   'global.community.zh': '全球社区建设',
   'global.community.en': 'Global community building',
-  'applications.zh': 'AI驱动应用',
-  'applications.en': 'AI-Powered Applications',
+  'applications.zh': 'AI驱动消费产品',
+  'applications.en': 'AI-Powered Consumer Products',
   'countries.served.zh': '覆盖国家',
   'countries.served.en': 'Countries Served',
   'global.downloads.zh': '全球下载量',
