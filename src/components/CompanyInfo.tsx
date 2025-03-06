@@ -74,22 +74,18 @@ const CompanyInfo: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative h-[500px] rounded-xl border border-black bg-white flex items-end overflow-hidden">
-              <div className="w-full p-8 z-20">
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div className="p-4 rounded-lg bg-white shadow-md text-black border border-black">
-                    <div className="text-3xl font-bold">175+</div>
-                    <div className="text-sm">Countries</div>
-                  </div>
-                  <div className="p-4 rounded-lg bg-white shadow-md text-black border border-black">
-                    <div className="text-3xl font-bold">100M+</div>
-                    <div className="text-sm">Downloads</div>
-                  </div>
-                  <div className="p-4 rounded-lg bg-white shadow-md text-black border border-black">
-                    <div className="text-3xl font-bold">10+</div>
-                    <div className="text-sm">Apps</div>
-                  </div>
-                </div>
+            <div className="grid grid-cols-3 gap-4 text-center">
+              <div className="p-6 rounded-lg bg-white shadow-md text-black border border-black hover:transform hover:scale-105 transition-all duration-300">
+                <div className="text-4xl font-bold">175+</div>
+                <div className="text-sm mt-2">Countries</div>
+              </div>
+              <div className="p-6 rounded-lg bg-white shadow-md text-black border border-black hover:transform hover:scale-105 transition-all duration-300">
+                <div className="text-4xl font-bold">100M+</div>
+                <div className="text-sm mt-2">Downloads</div>
+              </div>
+              <div className="p-6 rounded-lg bg-white shadow-md text-black border border-black hover:transform hover:scale-105 transition-all duration-300">
+                <div className="text-4xl font-bold">10+</div>
+                <div className="text-sm mt-2">Apps</div>
               </div>
             </div>
             
