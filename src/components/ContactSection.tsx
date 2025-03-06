@@ -101,13 +101,6 @@ const ContactSection: React.FC = () => {
           className="mt-16 text-center"
         >
           <footer className="bg-black text-white p-10 rounded-xl">
-            <div className="flex justify-center mb-6">
-              <img 
-                src="/lovable-uploads/b2475733-698f-4e44-8ede-55fa83f0a0b6.png" 
-                alt="Point One Logo" 
-                className="h-16"
-              />
-            </div>
             <p className="text-gray-400 text-sm">
               {t('footer.copyright')}
             </p>
