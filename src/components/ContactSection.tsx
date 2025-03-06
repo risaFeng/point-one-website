@@ -23,7 +23,7 @@ const ContactSection: React.FC = () => {
     {
       icon: <Globe className="text-blue-600" size={24} />,
       title: t('contact.social'),
-      detail: 'Follow us on social media',
+      detail: t('contact.social'),
       socials: [
         { icon: <Twitter size={20} />, url: 'https://twitter.com' },
         { icon: <Instagram size={20} />, url: 'https://instagram.com' },
@@ -48,7 +48,7 @@ const ContactSection: React.FC = () => {
         >
           <div className="inline-block mb-3">
             <span className="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">
-              Get In Touch
+              {t('get.in.touch')}
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 tracking-tight">

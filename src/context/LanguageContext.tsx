@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 type Language = 'zh' | 'en';
@@ -73,10 +72,36 @@ const translations = {
   // Footer
   'footer.copyright.zh': '© 2024 Point One. 保留所有权利。',
   'footer.copyright.en': '© 2024 Point One. All rights reserved.',
-  
-  // Language Toggle
-  'language.zh': '中文',
-  'language.en': 'English',
+
+  // Other UI Elements
+  'backed.by.zh': '支持方',
+  'backed.by.en': 'Backed By',
+  'get.in.touch.zh': '联系我们',
+  'get.in.touch.en': 'Get In Touch',
+  'ai.powered.zh': 'AI驱动',
+  'ai.powered.en': 'AI-Powered',
+  'multiple.rounds.zh': '获得多家主流机构多轮融资',
+  'multiple.rounds.en': 'Multiple rounds of financing from mainstream institutions',
+  'ai.content.creation.zh': 'AI驱动内容创作',
+  'ai.content.creation.en': 'AI-driven content creation',
+  'player.generated.worlds.zh': '玩家创建的世界',
+  'player.generated.worlds.en': 'Player-generated worlds',
+  'cross.platform.zh': '跨平台兼容',
+  'cross.platform.en': 'Cross-platform compatibility',
+  'realtime.translation.zh': '实时翻译',
+  'realtime.translation.en': 'Real-time translation',
+  'cultural.context.zh': '文化情境感知',
+  'cultural.context.en': 'Cultural context awareness',
+  'global.community.zh': '全球社区建设',
+  'global.community.en': 'Global community building',
+  'applications.zh': 'AI驱动应用',
+  'applications.en': 'AI-Powered Applications',
+  'countries.served.zh': '覆盖国家',
+  'countries.served.en': 'Countries Served',
+  'global.downloads.zh': '全球下载量',
+  'global.downloads.en': 'Global Downloads',
+  'point.one.zh': 'Point One',
+  'point.one.en': 'Point One',
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);

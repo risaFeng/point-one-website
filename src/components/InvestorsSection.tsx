@@ -59,7 +59,7 @@ const InvestorsSection: React.FC = () => {
         >
           <div className="inline-block mb-3">
             <span className="bg-indigo-100 text-indigo-800 text-xs font-medium px-3 py-1 rounded-full">
-              Backed By
+              {t('backed.by')}
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 tracking-tight">
@@ -98,7 +98,7 @@ const InvestorsSection: React.FC = () => {
           className="mt-16 text-center"
         >
           <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 text-gray-800 text-sm font-medium">
-            Multiple rounds of financing from mainstream institutions
+            {t('multiple.rounds')}
           </div>
         </motion.div>
       </div>

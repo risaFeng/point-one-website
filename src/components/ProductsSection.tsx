@@ -6,15 +6,32 @@ import { GamepadIcon, Bot, Globe, BrainCircuit, Puzzle } from 'lucide-react';
 
 const ProductsSection: React.FC = () => {
   const { t } = useLanguage();
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
+
+  const getProductFeatures = (index: number) => {
+    if (index === 0) {
+      return [
+        t('ai.content.creation'),
+        t('player.generated.worlds'),
+        t('cross.platform')
+      ];
+    } else {
+      return [
+        t('realtime.translation'),
+        t('cultural.context'),
+        t('global.community')
+      ];
+    }
+  };
 
   const productCards = [
     {
       title: t('products.item1.title'),
       description: t('products.item1.description'),
       icon: <GamepadIcon size={24} className="text-blue-600" />,
-      features: ['AI-driven content creation', 'Player-generated worlds', 'Cross-platform compatibility'],
+      features: getProductFeatures(0),
       color: 'from-blue-500 to-indigo-600',
       delay: 0.1
     },
@@ -22,7 +39,7 @@ const ProductsSection: React.FC = () => {
       title: t('products.item2.title'),
       description: t('products.item2.description'),
       icon: <Globe size={24} className="text-purple-600" />,
-      features: ['Real-time translation', 'Cultural context awareness', 'Global community building'],
+      features: getProductFeatures(1),
       color: 'from-purple-500 to-pink-600',
       delay: 0.3
     }
@@ -112,7 +129,7 @@ const ProductsSection: React.FC = () => {
         >
           <motion.div variants={itemVariants} className="inline-block mb-3">
             <span className="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">
-              AI-Powered
+              {t('ai.powered')}
             </span>
           </motion.div>
           <motion.h2 variants={itemVariants} className="text-3xl sm:text-4xl font-bold mb-6 tracking-tight">
@@ -181,15 +198,15 @@ const ProductsSection: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="p-4">
               <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
-              <div className="text-gray-600">AI-Powered Applications</div>
+              <div className="text-gray-600">{t('applications')}</div>
             </div>
             <div className="p-4">
               <div className="text-4xl font-bold text-purple-600 mb-2">175+</div>
-              <div className="text-gray-600">Countries Served</div>
+              <div className="text-gray-600">{t('countries.served')}</div>
             </div>
             <div className="p-4">
               <div className="text-4xl font-bold text-indigo-600 mb-2">100M+</div>
-              <div className="text-gray-600">Global Downloads</div>
+              <div className="text-gray-600">{t('global.downloads')}</div>
             </div>
           </div>
         </motion.div>

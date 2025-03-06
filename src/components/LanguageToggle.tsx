@@ -9,7 +9,7 @@ type LanguageToggleProps = {
 };
 
 const LanguageToggle: React.FC<LanguageToggleProps> = ({ className }) => {
-  const { language, setLanguage, t } = useLanguage();
+  const { language, setLanguage } = useLanguage();
 
   const toggleLanguage = () => {
     setLanguage(language === 'zh' ? 'en' : 'zh');
