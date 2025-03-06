@@ -106,7 +106,7 @@ const InvestorsSection: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7 }}
-          className="mb-12"
+          className="relative mb-12 overflow-hidden"
         >
           <div 
             ref={scrollRef}

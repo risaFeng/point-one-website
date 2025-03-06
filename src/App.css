@@ -44,9 +44,9 @@
 
 /* Ensure scrolling containers hide scrollbars across browsers */
 .custom-scrollbar::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 .custom-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
