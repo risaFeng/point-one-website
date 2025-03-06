@@ -12,27 +12,27 @@ const AwardsSection: React.FC = () => {
   const awardsData = [
     {
       title: t('awards.2022.item1'),
-      year: t('awards.2022.title'),
+      year: '2022',
       icon: <Trophy className="text-black" size={24} />
     },
     {
       title: t('awards.2022.item2'),
-      year: t('awards.2022.title'),
+      year: '2022',
       icon: <Trophy className="text-black" size={24} />
     },
     {
       title: t('awards.2022.item3'),
-      year: t('awards.2022.title'),
+      year: '2022',
       icon: <Trophy className="text-black" size={24} />
     },
     {
       title: t('awards.2023.item1'),
-      year: t('awards.2023.title'),
+      year: '2023',
       icon: <Star className="text-black" size={24} />
     },
     {
       title: t('awards.2024.item1'),
-      year: t('awards.2024.title'),
+      year: '2024',
       icon: <Award className="text-black" size={24} />
     }
   ];
