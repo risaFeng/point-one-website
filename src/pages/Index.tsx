@@ -8,7 +8,7 @@ import LanguageToggle from '@/components/LanguageToggle';
 import CompanyHistory from '@/components/CompanyHistory';
 import AwardsSection from '@/components/AwardsSection';
 import FoundersSection from '@/components/FoundersSection';
-import InvestorsSection from '@/components/InvestorsSection';
+import NewInvestorsSection from '@/components/NewInvestorsSection';
 import DownloadBanner from '@/components/DownloadBanner';
 import { LanguageProvider } from '@/context/LanguageContext';
 
@@ -43,7 +43,7 @@ const Index = () => {
         <ProductsSection />
         <AwardsSection />
         <FoundersSection />
-        <InvestorsSection />
+        <NewInvestorsSection />
         <ContactSection />
       </div>
     </LanguageProvider>
