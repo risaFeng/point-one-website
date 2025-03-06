@@ -56,7 +56,7 @@ const ProductsSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full flex items-center justify-center border border-black">
+            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full flex items-center justify-center">
               <Sparkles className="inline-block mr-1.5" size={14} />
               {t('ai.powered')}
             </span>

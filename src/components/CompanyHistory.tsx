@@ -46,7 +46,7 @@ const CompanyHistory: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full border border-black">
+            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
               Point One
             </span>
           </div>
