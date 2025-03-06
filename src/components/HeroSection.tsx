@@ -22,19 +22,6 @@ const HeroSection: React.FC = () => {
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="flex justify-center mb-8"
-        >
-          <img 
-            src="/lovable-uploads/d1e8d34e-d410-465a-a958-bff827efaf32.png" 
-            alt="Point One Logo" 
-            className="h-24 md:h-32"
-          />
-        </motion.div>
-        
         <motion.h1 
           className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight"
           initial={{ opacity: 0, y: 20 }}
