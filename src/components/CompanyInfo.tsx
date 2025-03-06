@@ -23,7 +23,7 @@ const CompanyInfo: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
+            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full border border-black">
               Point One
             </span>
           </div>
@@ -46,7 +46,7 @@ const CompanyInfo: React.FC = () => {
               {t('about.description')}
             </p>
             
-            <div className="p-6 rounded-xl border border-gray-200 hover:border-black transition-colors duration-300 bg-white">
+            <div className="p-6 rounded-xl border border-black hover:shadow-lg transition-all duration-300 bg-white">
               <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
                 <Medal className="text-black" size={24} />
                 {t('achievements.title')}
@@ -74,24 +74,24 @@ const CompanyInfo: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative h-[500px] overflow-hidden rounded-xl bg-gray-900">
+            <div className="relative h-[500px] overflow-hidden rounded-xl border border-black">
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3"
                 alt="Global team collaboration"
-                className="absolute inset-0 w-full h-full object-cover object-center mix-blend-overlay opacity-70 grayscale"
+                className="absolute inset-0 w-full h-full object-cover object-center"
               />
               
               <div className="absolute bottom-0 left-0 right-0 p-8 z-20 text-white">
                 <div className="grid grid-cols-3 gap-4 text-center">
-                  <div className="p-4 rounded-lg bg-black/60 backdrop-blur-sm">
+                  <div className="p-4 rounded-lg bg-white/90 backdrop-blur-sm text-black border border-black">
                     <div className="text-3xl font-bold">175+</div>
                     <div className="text-sm">Countries</div>
                   </div>
-                  <div className="p-4 rounded-lg bg-black/60 backdrop-blur-sm">
+                  <div className="p-4 rounded-lg bg-white/90 backdrop-blur-sm text-black border border-black">
                     <div className="text-3xl font-bold">100M+</div>
                     <div className="text-sm">Downloads</div>
                   </div>
-                  <div className="p-4 rounded-lg bg-black/60 backdrop-blur-sm">
+                  <div className="p-4 rounded-lg bg-white/90 backdrop-blur-sm text-black border border-black">
                     <div className="text-3xl font-bold">10+</div>
                     <div className="text-sm">Apps</div>
                   </div>
@@ -99,7 +99,7 @@ const CompanyInfo: React.FC = () => {
               </div>
             </div>
             
-            <div className="absolute -bottom-6 -right-6 w-36 h-36 bg-white p-4 rounded-lg shadow-xl border border-gray-100">
+            <div className="absolute -bottom-6 -right-6 w-36 h-36 bg-white p-4 rounded-lg shadow-xl border border-black">
               <motion.div 
                 animate={{ 
                   rotate: [0, 5, 0, -5, 0],

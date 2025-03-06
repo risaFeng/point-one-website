@@ -46,7 +46,7 @@ const CompanyHistory: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
+            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full border border-black">
               Point One
             </span>
           </div>
@@ -72,17 +72,17 @@ const CompanyHistory: React.FC = () => {
                 }`}
               >
                 <div className="md:w-1/2 mb-4 md:mb-0 px-4">
-                  <div className={`bg-black text-white p-6 rounded-xl hover:scale-105 transition-all duration-300 ${
+                  <div className={`bg-white text-black p-6 rounded-xl border border-black hover:scale-105 transition-all duration-300 ${
                     index % 2 === 0 ? 'md:ml-6' : 'md:mr-6'
                   }`}>
-                    <h3 className="text-xl font-semibold mb-2 text-white">{event.period}</h3>
-                    <p className="text-gray-300">{event.description}</p>
+                    <h3 className="text-xl font-semibold mb-2 text-black">{event.period}</h3>
+                    <p className="text-gray-700">{event.description}</p>
                   </div>
                 </div>
                 
                 <div className="md:w-0 flex justify-center">
-                  <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center z-10">
-                    <Clock className="text-white" size={20} />
+                  <div className="w-10 h-10 rounded-full bg-white border border-black flex items-center justify-center z-10">
+                    <Clock className="text-black" size={20} />
                   </div>
                 </div>
                 

@@ -58,7 +58,7 @@ const InvestorsSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
+            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full border border-black">
               {t('backed.by')}
             </span>
           </div>
@@ -85,7 +85,7 @@ const InvestorsSection: React.FC = () => {
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="w-full h-24 flex items-center justify-center bg-white rounded-lg shadow-sm border border-gray-100 hover:border-black transition-all duration-300 p-4">
+                <div className="w-full h-24 flex items-center justify-center bg-white rounded-lg shadow-sm border border-gray-300 hover:border-black transition-all duration-300 p-4">
                   <img 
                     src={investor.logoSrc}
                     alt={`${investor.name} logo`}
@@ -103,7 +103,7 @@ const InvestorsSection: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="mt-8 text-center"
         >
-          <div className="inline-block px-6 py-3 rounded-full bg-gray-100 text-gray-800 text-sm font-medium">
+          <div className="inline-block px-6 py-3 rounded-full bg-white text-black text-sm font-medium border border-black">
             {t('multiple.rounds')}
           </div>
         </motion.div>

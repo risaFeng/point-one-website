@@ -49,7 +49,7 @@ const AwardsSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
+            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full border border-black">
               BUD
             </span>
           </div>
@@ -68,7 +68,7 @@ const AwardsSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 hover:border-black"
+              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-black hover:border-black"
             >
               <div className="flex items-center mb-6">
                 <div className="p-3 rounded-lg bg-gray-100 mr-4">

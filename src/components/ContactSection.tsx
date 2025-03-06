@@ -46,7 +46,7 @@ const ContactSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
+            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full border border-black">
               {t('get.in.touch')}
             </span>
           </div>
@@ -65,7 +65,7 @@ const ContactSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white text-black p-8 rounded-xl border border-gray-200 hover:border-black transition-all duration-300 flex flex-col"
+              className="bg-white text-black p-8 rounded-xl border border-black hover:shadow-lg transition-all duration-300 flex flex-col"
             >
               <div className="flex items-center mb-4">
                 <div className="p-3 rounded-lg bg-gray-100 mr-4">
@@ -100,8 +100,8 @@ const ContactSection: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <footer className="bg-black text-white p-10 rounded-xl">
-            <p className="text-gray-400 text-sm">
+          <footer className="bg-white text-black p-10 rounded-xl border border-black">
+            <p className="text-gray-600 text-sm">
               {t('footer.copyright')}
             </p>
           </footer>

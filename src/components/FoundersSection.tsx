@@ -38,7 +38,7 @@ const FoundersSection: React.FC = () => {
           className="text-center mb-14"
         >
           <div className="inline-block mb-3">
-            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full flex items-center justify-center">
+            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full flex items-center justify-center border border-black">
               <Users className="inline-block mr-1.5" size={14} />
               {t('founders.subtitle')}
             </span>
@@ -57,7 +57,7 @@ const FoundersSection: React.FC = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="rounded-xl overflow-hidden transition-all duration-300 group relative"
             >
-              <div className="relative bg-white p-10 flex flex-col items-center rounded-xl shadow-sm border border-gray-100 h-full">
+              <div className="relative bg-white p-10 flex flex-col items-center rounded-xl shadow-sm border border-black h-full">
                 <div className="absolute top-0 left-0 w-full h-2 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 <div className="relative z-10">
