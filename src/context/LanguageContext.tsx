@@ -17,6 +17,10 @@ const translations = {
   'hero.cta.zh': '了解更多',
   'hero.cta.en': 'Learn More',
   
+  // Download Banner
+  'download.bud.zh': '下载 BUD-碧优蒂的世界',
+  'download.bud.en': 'Download BUD Game',
+  
   // About Section
   'about.title.zh': '关于我们',
   'about.title.en': 'About Us',
@@ -42,7 +46,7 @@ const translations = {
   'history.2021.description.en': 'Point One Inc. completed a $15 million Series A+ financing led by Qiming Venture Partners, with oversubscription from existing shareholders Source Code Capital, GGV Capital, and Yunqi Capital, further strengthening the company\'s position in the industry.',
   'history.2022.title.zh': '2022年5月',
   'history.2022.title.en': 'May 2022',
-  'history.2022.description.zh': '公司再次完成3680万美元的B轮融资，本轮融资由Peak XV Partners（前红杉印度）领投，网易等多家知名美元基金跟投，标志着公司在资本市场的持续认可。',
+  'history.2022.description.zh': '公司再次完成3680��美元的B轮融资，本轮融资由Peak XV Partners（前红杉印度）领投，网易等多家知名美元基金跟投，标志着公司在资本市场的持续认可。',
   'history.2022.description.en': 'The company completed a $36.8 million Series B financing led by Peak XV Partners (formerly Sequoia India), with participation from NetEase and other well-known dollar funds, marking the continued recognition of the company in the capital market.',
   'history.present.title.zh': '2022年至今',
   'history.present.title.en': '2022 to Present',

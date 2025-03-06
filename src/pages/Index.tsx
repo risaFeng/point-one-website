@@ -9,6 +9,7 @@ import CompanyHistory from '@/components/CompanyHistory';
 import AwardsSection from '@/components/AwardsSection';
 import FoundersSection from '@/components/FoundersSection';
 import InvestorsSection from '@/components/InvestorsSection';
+import DownloadBanner from '@/components/DownloadBanner';
 import { LanguageProvider } from '@/context/LanguageContext';
 
 const Index = () => {
@@ -34,6 +35,7 @@ const Index = () => {
   return (
     <LanguageProvider>
       <div className="min-h-screen overflow-x-hidden">
+        <DownloadBanner />
         <LanguageToggle />
         <HeroSection />
         <CompanyInfo />
