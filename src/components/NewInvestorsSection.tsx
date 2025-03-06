@@ -8,39 +8,39 @@ const NewInvestorsSection: React.FC = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   
-  // Investor logos array with the updated image paths
+  // Updated investor logos array with placeholder images
   const investors = [
     { 
       name: 'Peak XV',
-      logoSrc: '/lovable-uploads/cbeb1673-5f29-486b-9abd-541b03cdc3cd.png'
+      logoSrc: '/placeholder.svg'
     },
     { 
       name: 'Sky9 Capital',
-      logoSrc: '/lovable-uploads/49cc185a-81b3-48fa-880f-9e892dd9827d.png'
+      logoSrc: '/placeholder.svg'
     },
     { 
       name: 'Source Code Capital',
-      logoSrc: '/lovable-uploads/805edd2f-c4d0-4484-bf2b-cb93d4c7895d.png'
+      logoSrc: '/placeholder.svg'
     },
     { 
       name: 'Qiming Ventures',
-      logoSrc: '/lovable-uploads/989b1633-5fef-4cc7-8996-e3eef68452e2.png'
+      logoSrc: '/placeholder.svg'
     },
     { 
       name: 'Northern Light VC',
-      logoSrc: '/lovable-uploads/8978db89-bc10-41af-83b5-75f9624a59ac.png'
+      logoSrc: '/placeholder.svg'
     },
     { 
       name: 'NetEase',
-      logoSrc: '/lovable-uploads/978d4854-f1ea-428f-81d6-91111a01d208.png'
+      logoSrc: '/placeholder.svg'
     },
     { 
       name: 'ClearVue Partners',
-      logoSrc: '/lovable-uploads/bb83d9dc-e3a3-4f21-a921-02c4f4f8bb6f.png'
+      logoSrc: '/placeholder.svg'
     },
     { 
       name: 'GraniteAsia',
-      logoSrc: '/lovable-uploads/77d32076-d0e8-4a6c-aba9-3c48141dd01c.png'
+      logoSrc: '/placeholder.svg'
     }
   ];
 
@@ -88,11 +88,7 @@ const NewInvestorsSection: React.FC = () => {
                 <img 
                   src={investor.logoSrc}
                   alt={`${investor.name} logo`}
-                  className="max-h-full max-w-full object-contain transition-all duration-300 grayscale hover:grayscale-0"
-                  onError={(e) => {
-                    console.error(`Failed to load image: ${investor.logoSrc}`);
-                    e.currentTarget.src = '/placeholder.svg';
-                  }}
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
             </motion.div>
