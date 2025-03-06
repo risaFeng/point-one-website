@@ -11,32 +11,28 @@ const AwardsSection: React.FC = () => {
 
   const awardsData = [
     {
-      year: t('awards.2022.title') + ' (1)',
-      awards: [
-        t('awards.2022.item1'),
-        t('awards.2022.item2'),
-      ],
+      title: t('awards.2022.item1'),
+      year: t('awards.2022.title'),
       icon: <Trophy className="text-black" size={24} />
     },
     {
-      year: t('awards.2022.title') + ' (2)',
-      awards: [
-        t('awards.2022.item3')
-      ],
+      title: t('awards.2022.item2'),
+      year: t('awards.2022.title'),
       icon: <Trophy className="text-black" size={24} />
     },
     {
+      title: t('awards.2022.item3'),
+      year: t('awards.2022.title'),
+      icon: <Trophy className="text-black" size={24} />
+    },
+    {
+      title: t('awards.2023.item1'),
       year: t('awards.2023.title'),
-      awards: [
-        t('awards.2023.item1')
-      ],
       icon: <Star className="text-black" size={24} />
     },
     {
+      title: t('awards.2024.item1'),
       year: t('awards.2024.title'),
-      awards: [
-        t('awards.2024.item1')
-      ],
       icon: <Award className="text-black" size={24} />
     }
   ];
@@ -67,30 +63,28 @@ const AwardsSection: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {awardsData.map((yearData, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          {awardsData.map((award, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-black hover:border-black"
+              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-black hover:border-black flex flex-col h-full"
             >
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-4">
                 <div className="p-3 rounded-lg bg-gray-100 mr-4">
-                  {yearData.icon}
+                  {award.icon}
                 </div>
-                <h3 className="font-bold text-xl">{yearData.year}</h3>
               </div>
               
-              <ul className="space-y-4">
-                {yearData.awards.map((award, idx) => (
-                  <li key={idx} className="flex">
-                    <span className="text-black mr-2">•</span>
-                    <span className="text-gray-700">{award}</span>
-                  </li>
-                ))}
-              </ul>
+              <h3 className="font-bold text-lg mb-4 flex-grow">
+                {award.title}
+              </h3>
+              
+              <div className="text-sm text-gray-500 mt-auto pt-4 border-t border-gray-100">
+                {award.year}
+              </div>
             </motion.div>
           ))}
         </div>
