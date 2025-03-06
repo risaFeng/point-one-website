@@ -67,7 +67,7 @@ const HeroSection: React.FC = () => {
             }}
           >
             <div className="text-lg font-medium px-4 py-1 rounded-full bg-white/50 backdrop-blur-sm border border-gray-100 shadow-sm text-primary">
-              Point One
+              {t('point.one')}
             </div>
           </motion.div>
           
