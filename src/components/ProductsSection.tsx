@@ -12,15 +12,15 @@ const ProductsSection: React.FC = () => {
   const getProductFeatures = (index: number) => {
     if (index === 0) {
       return [
-        t('ai.content.creation'),
-        t('player.generated.worlds'),
-        t('cross.platform')
+        t('ai.npc.interaction'),
+        t('player.created.worlds'),
+        t('mobile.first.gaming')
       ];
     } else {
       return [
-        t('realtime.translation'),
-        t('cultural.context'),
-        t('global.community')
+        t('productivity.enhancement'),
+        t('sota.ai.technology'),
+        t('real.problem.solving')
       ];
     }
   };

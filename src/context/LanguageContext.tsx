@@ -104,12 +104,12 @@ const translations = {
   'products.subtitle.en': 'Innovative AI Consumer Products & Gaming Experiences',
   'products.item1.title.zh': 'AI游戏UGC平台',
   'products.item1.title.en': 'AI Game UGC Platform',
-  'products.item1.description.zh': '赋予玩家创造能力，使其从单纯的游戏参与者转变为内容创作者',
-  'products.item1.description.en': 'Empowering players with creative abilities, transforming them from mere game participants to content creators',
+  'products.item1.description.zh': '在移动平台上打造交互式AI NPC和玩家创造世界，让玩家从游戏参与者转变为内容创作者',
+  'products.item1.description.en': 'Create interactive AI NPCs and player-generated worlds on mobile, transforming players from game participants to content creators',
   'products.item2.title.zh': '全球AI消费产品',
   'products.item2.title.en': 'Global AI Consumer Products',
-  'products.item2.description.zh': '以技术打破语言文化壁垒，促进全球用户的连接与交流',
-  'products.item2.description.en': 'Breaking language and cultural barriers through technology, facilitating global connection and communication',
+  'products.item2.description.zh': '利用最先进的LLM和扩散技术提高生产力，解决实际生活问题，为用户创造真实价值',
+  'products.item2.description.en': 'Leverage state-of-the-art LLM and diffusion technology to enhance productivity and solve real-life problems, delivering genuine value to users',
   
   // Investors Section
   'investors.title.zh': '投资方',
@@ -162,6 +162,18 @@ const translations = {
   'global.downloads.en': 'Global Downloads',
   'point.one.zh': 'Point One',
   'point.one.en': 'Point One',
+  'ai.npc.interaction.zh': 'AI互动NPC技术',
+  'ai.npc.interaction.en': 'Interactive AI NPCs',
+  'player.created.worlds.zh': '玩家自建游戏世界',
+  'player.created.worlds.en': 'Player-created game worlds',
+  'mobile.first.gaming.zh': '移动优先游戏体验',
+  'mobile.first.gaming.en': 'Mobile-first gaming experience',
+  'productivity.enhancement.zh': '生产力提升工具',
+  'productivity.enhancement.en': 'Productivity enhancement tools',
+  'sota.ai.technology.zh': '最先进的LLM与扩散模型',
+  'sota.ai.technology.en': 'State-of-the-art LLM & diffusion models',
+  'real.problem.solving.zh': '实际问题解决方案',
+  'real.problem.solving.en': 'Real-life problem solutions',
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
