@@ -11,10 +11,16 @@ const AwardsSection: React.FC = () => {
 
   const awardsData = [
     {
-      year: t('awards.2022.title'),
+      year: t('awards.2022.title') + ' (1)',
       awards: [
         t('awards.2022.item1'),
         t('awards.2022.item2'),
+      ],
+      icon: <Trophy className="text-black" size={24} />
+    },
+    {
+      year: t('awards.2022.title') + ' (2)',
+      awards: [
         t('awards.2022.item3')
       ],
       icon: <Trophy className="text-black" size={24} />
@@ -61,7 +67,7 @@ const AwardsSection: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {awardsData.map((yearData, index) => (
             <motion.div
               key={index}
