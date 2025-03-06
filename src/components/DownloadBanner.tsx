@@ -21,6 +21,11 @@ const DownloadBanner: React.FC = () => {
           transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 3 }}
           className="flex items-center"
         >
+          <img 
+            src="/lovable-uploads/dca1b13a-0da5-4450-8b34-e1fe6d38db22.png" 
+            alt="BUD App Logo" 
+            className="w-6 h-6 mr-2" 
+          />
           <Download size={16} className="mr-1" />
           <span className="font-medium">{t('download.bud')}</span>
         </motion.div>
