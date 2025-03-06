@@ -2,35 +2,12 @@
 import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
-import { Mail, MapPin, Globe, TwitterIcon, Instagram, Linkedin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   const { t } = useLanguage();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
-
-  const contactInfo = [
-    {
-      icon: <Mail className="text-black" size={24} />,
-      title: t('contact.email'),
-      detail: 'contact@pointone.tech',
-    },
-    {
-      icon: <MapPin className="text-black" size={24} />,
-      title: t('contact.location'),
-      detail: 'Beijing, China | San Francisco, USA',
-    },
-    {
-      icon: <Globe className="text-black" size={24} />,
-      title: t('contact.social'),
-      detail: t('contact.social'),
-      socials: [
-        { icon: <TwitterIcon size={18} />, url: 'https://twitter.com' },
-        { icon: <Instagram size={18} />, url: 'https://instagram.com' },
-        { icon: <Linkedin size={18} />, url: 'https://linkedin.com' },
-      ]
-    }
-  ];
 
   return (
     <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
@@ -58,41 +35,27 @@ const ContactSection: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {contactInfo.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white text-black p-8 rounded-xl border border-black hover:shadow-lg transition-all duration-300 flex flex-col"
-            >
-              <div className="flex items-center mb-4">
-                <div className="p-3 rounded-lg bg-gray-100 mr-4">
-                  {item.icon}
-                </div>
-                <h3 className="font-semibold text-lg">{item.title}</h3>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-lg mx-auto"
+        >
+          <div className="bg-white text-black p-8 rounded-xl border border-black hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center mb-6">
+              <div className="p-3 rounded-lg bg-gray-100 mr-4">
+                <Mail className="text-black" size={24} />
               </div>
-              <p className="text-gray-600 mb-4">{item.detail}</p>
-              
-              {item.socials && (
-                <div className="flex gap-4 mt-auto">
-                  {item.socials.map((social, idx) => (
-                    <a
-                      key={idx}
-                      href={social.url}
-                      className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {social.icon}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </motion.div>
-          ))}
-        </div>
+              <h3 className="font-semibold text-lg">{t('contact.email')}</h3>
+            </div>
+            <a 
+              href="mailto:contact@pointone.tech" 
+              className="text-xl font-medium text-black hover:underline transition-all duration-300 flex justify-center"
+            >
+              contact@pointone.tech
+            </a>
+          </div>
+        </motion.div>
         
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
