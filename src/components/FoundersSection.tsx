@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
-import { Users, Twitter } from 'lucide-react';
+import { Users } from 'lucide-react';
 
 const FoundersSection: React.FC = () => {
   const { t } = useLanguage();
@@ -13,18 +13,14 @@ const FoundersSection: React.FC = () => {
     {
       name: t('founders.risa.name'),
       bio: t('founders.risa.bio'),
-      image: "/lovable-uploads/4730bc85-9a92-4e80-81eb-253106d3a071.png", // Risa's new image
-      socials: [
-        { icon: <Twitter size={18} />, url: '#' },
-      ]
+      image: "/lovable-uploads/4730bc85-9a92-4e80-81eb-253106d3a071.png", // Risa's image
+      socials: []
     },
     {
       name: t('founders.shawn.name'),
       bio: t('founders.shawn.bio'),
-      image: "/lovable-uploads/49121768-815e-429c-ad37-72e44dd1154b.png", // Shawn's new image
-      socials: [
-        { icon: <Twitter size={18} />, url: '#' },
-      ]
+      image: "/lovable-uploads/49121768-815e-429c-ad37-72e44dd1154b.png", // Shawn's image
+      socials: []
     }
   ];
 
@@ -71,17 +67,6 @@ const FoundersSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-6 right-6">
                   <h3 className="text-white text-2xl font-bold">{founder.name}</h3>
-                  <div className="flex mt-2 space-x-2">
-                    {founder.socials.map((social, idx) => (
-                      <a 
-                        key={idx} 
-                        href={social.url}
-                        className="text-white p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
-                      >
-                        {social.icon}
-                      </a>
-                    ))}
-                  </div>
                 </div>
               </div>
               <div className="p-6">
