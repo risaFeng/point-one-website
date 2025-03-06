@@ -45,6 +45,64 @@ const ProductsSection: React.FC = () => {
     }
   ];
 
+  const productIcons = [
+    {
+      name: "BUD",
+      imagePath: "public/lovable-uploads/6a212e70-ae67-4ecd-af76-a3ef901eb0de.png",
+      bgColor: "bg-purple-500"
+    },
+    {
+      name: "Talk",
+      imagePath: "public/lovable-uploads/e2218545-17d7-44b4-b344-45ba064cfe4d.png",
+      bgColor: "bg-black"
+    },
+    {
+      name: "Music",
+      imagePath: "public/lovable-uploads/7321e04a-82c2-4dff-bdb5-8ba68486cbab.png",
+      bgColor: "bg-pink-500"
+    },
+    {
+      name: "Cat",
+      imagePath: "public/lovable-uploads/2b5fe4ae-eae5-42f9-b1cf-7874dbe02708.png",
+      bgColor: "bg-purple-600"
+    },
+    {
+      name: "Lemon",
+      imagePath: "public/lovable-uploads/8ba68486cbab.png",
+      bgColor: "bg-yellow-500"
+    },
+    {
+      name: "Camera",
+      imagePath: "public/lovable-uploads/b2555d01-158c-46d3-aa18-410571289fdb.png",
+      bgColor: "bg-purple-400"
+    },
+    {
+      name: "Reader",
+      imagePath: "public/lovable-uploads/ea5ab59e-aa24-4ded-aadc-0acaeccf7c5a.png",
+      bgColor: "bg-black"
+    },
+    {
+      name: "Mail",
+      imagePath: "public/lovable-uploads/c9483916-2a63-412c-831e-b1f8332b54f0.png",
+      bgColor: "bg-black"
+    },
+    {
+      name: "Cleaner",
+      imagePath: "public/lovable-uploads/4c43cd78-bb95-46d0-aa16-0fafcb420d0b.png",
+      bgColor: "bg-pink-500"
+    },
+    {
+      name: "Roblox",
+      imagePath: "public/lovable-uploads/1407bd8e-748d-4e92-9a9e-82e6b92ba209.png",
+      bgColor: "bg-purple-300"
+    },
+    {
+      name: "Magic",
+      imagePath: "public/lovable-uploads/f14f2db9-589e-4d1e-ae2a-2e0275fce42d.png",
+      bgColor: "bg-black"
+    }
+  ];
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -138,6 +196,70 @@ const ProductsSection: React.FC = () => {
           <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
             {t('products.subtitle')}
           </motion.p>
+        </motion.div>
+
+        {/* Product Icons Scrolling Carousel */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.7 }}
+          className="mb-16 relative"
+        >
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
+          
+          <div className="overflow-hidden py-6">
+            <motion.div 
+              className="flex space-x-8"
+              animate={{ 
+                x: [0, -1500]
+              }}
+              transition={{ 
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 40,
+                ease: "linear"
+              }}
+            >
+              {/* First set of icons */}
+              {productIcons.map((product, index) => (
+                <motion.div
+                  key={`product-${index}`}
+                  className="flex-shrink-0 group"
+                  whileHover={{ y: -10, scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                    <img 
+                      src={product.imagePath} 
+                      alt={product.name}
+                      className="w-full h-full object-cover" 
+                    />
+                  </div>
+                  <p className="mt-2 text-center text-sm font-medium text-gray-700">{product.name}</p>
+                </motion.div>
+              ))}
+              
+              {/* Duplicate set for seamless loop */}
+              {productIcons.map((product, index) => (
+                <motion.div
+                  key={`product-dup-${index}`}
+                  className="flex-shrink-0 group"
+                  whileHover={{ y: -10, scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="relative w-24 h-24 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+                    <img 
+                      src={product.imagePath} 
+                      alt={product.name}
+                      className="w-full h-full object-cover" 
+                    />
+                  </div>
+                  <p className="mt-2 text-center text-sm font-medium text-gray-700">{product.name}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
