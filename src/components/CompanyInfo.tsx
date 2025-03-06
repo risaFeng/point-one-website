@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
-import { Globe, Medal, BarChart } from 'lucide-react';
+import { Medal } from 'lucide-react';
 
 const CompanyInfo: React.FC = () => {
   const { t } = useLanguage();
@@ -74,24 +74,7 @@ const CompanyInfo: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="relative"
           >
-            <div className="absolute -bottom-6 -right-6 w-36 h-36 bg-white p-4 rounded-lg shadow-xl border border-black">
-              <motion.div 
-                animate={{ 
-                  rotate: [0, 5, 0, -5, 0],
-                }}
-                transition={{ 
-                  repeat: Infinity,
-                  duration: 6,
-                  ease: "easeInOut" 
-                }}
-              >
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" 
-                  alt="Technology icon" 
-                  className="w-full h-full object-contain"
-                />
-              </motion.div>
-            </div>
+            {/* The JavaScript logo box has been removed */}
           </motion.div>
         </div>
       </div>
