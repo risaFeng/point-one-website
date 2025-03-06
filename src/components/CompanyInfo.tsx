@@ -58,7 +58,7 @@ const CompanyInfo: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-black text-xl leading-7">•</span>
-                  <span>进入过前Top</span>
+                  <span>{t('achievements.item2')}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-black text-xl leading-7">•</span>
