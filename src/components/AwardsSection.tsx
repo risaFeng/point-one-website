@@ -50,7 +50,7 @@ const AwardsSection: React.FC = () => {
         >
           <div className="inline-block mb-3">
             <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full border border-black">
-              BUD
+              AWARDS
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight">
