@@ -8,7 +8,7 @@ const InvestorsSection: React.FC = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
-  // Updated investor logos with the new images
+  // Investor logos array
   const investors = [
     { logo: 'public/lovable-uploads/ba9e4823-7ae5-4027-92c8-38524b6854e6.png' }, // Peak XV
     { logo: 'public/lovable-uploads/7fe4695c-b140-4852-869c-e7ee6b4369cc.png' }, // Sky9 Capital
@@ -46,65 +46,30 @@ const InvestorsSection: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Investors Scrolling Carousel */}
+        {/* Investors Logo Grid */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.7 }}
-          className="mb-16 relative"
+          className="mb-16"
         >
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
-          
-          <div className="overflow-hidden py-8">
-            <motion.div 
-              className="flex space-x-12"
-              animate={{ 
-                x: [0, -1800]
-              }}
-              transition={{ 
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 45,
-                ease: "linear"
-              }}
-            >
-              {/* First set of logos */}
-              {investors.map((investor, index) => (
-                <motion.div
-                  key={`investor-${index}`}
-                  className="flex-shrink-0 group"
-                  whileHover={{ y: -10, scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="w-40 h-24 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-lg transition-all p-4">
-                    <img 
-                      src={investor.logo} 
-                      alt="Investor logo" 
-                      className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-              
-              {/* Duplicate set for seamless loop */}
-              {investors.map((investor, index) => (
-                <motion.div
-                  key={`investor-dup-${index}`}
-                  className="flex-shrink-0 group"
-                  whileHover={{ y: -10, scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="w-40 h-24 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-lg transition-all p-4">
-                    <img 
-                      src={investor.logo} 
-                      alt="Investor logo" 
-                      className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+            {investors.map((investor, index) => (
+              <motion.div
+                key={`investor-${index}`}
+                className="flex items-center justify-center"
+                whileHover={{ y: -8, scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="w-full h-24 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-lg transition-all p-4">
+                  <img 
+                    src={investor.logo} 
+                    alt="Investor logo" 
+                    className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
         
