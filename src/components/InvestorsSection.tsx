@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
@@ -8,16 +7,16 @@ const InvestorsSection: React.FC = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
-  // Investor logos array
+  // Investor logos array - fix image paths by removing 'public/' prefix
   const investors = [
-    { logo: 'public/lovable-uploads/ba9e4823-7ae5-4027-92c8-38524b6854e6.png' }, // Peak XV
-    { logo: 'public/lovable-uploads/7fe4695c-b140-4852-869c-e7ee6b4369cc.png' }, // Sky9 Capital
-    { logo: 'public/lovable-uploads/650a6298-4212-4204-b9b4-366132a2b570.png' }, // Source Code Capital
-    { logo: 'public/lovable-uploads/0d7b9038-86eb-4eca-902d-280a85ccea78.png' }, // Qiming Ventures
-    { logo: 'public/lovable-uploads/cf85bf08-c082-4863-a4e7-e2750122eaca.png' }, // Northern Light VC
-    { logo: 'public/lovable-uploads/ae522528-ebd6-40e1-8ed4-b4298a5df085.png' }, // NetEase
-    { logo: 'public/lovable-uploads/f9cdd451-411f-4b7e-a19d-8103c23a79a6.png' }, // ClearVue
-    { logo: 'public/lovable-uploads/f4246879-70f5-4c8f-ad9b-33ef417d8589.png' }, // GraniteAsia
+    { logo: '/lovable-uploads/ba9e4823-7ae5-4027-92c8-38524b6854e6.png' }, // Peak XV
+    { logo: '/lovable-uploads/7fe4695c-b140-4852-869c-e7ee6b4369cc.png' }, // Sky9 Capital
+    { logo: '/lovable-uploads/650a6298-4212-4204-b9b4-366132a2b570.png' }, // Source Code Capital
+    { logo: '/lovable-uploads/0d7b9038-86eb-4eca-902d-280a85ccea78.png' }, // Qiming Ventures
+    { logo: '/lovable-uploads/cf85bf08-c082-4863-a4e7-e2750122eaca.png' }, // Northern Light VC
+    { logo: '/lovable-uploads/ae522528-ebd6-40e1-8ed4-b4298a5df085.png' }, // NetEase
+    { logo: '/lovable-uploads/f9cdd451-411f-4b7e-a19d-8103c23a79a6.png' }, // ClearVue
+    { logo: '/lovable-uploads/f4246879-70f5-4c8f-ad9b-33ef417d8589.png' }, // GraniteAsia
   ];
 
   return (

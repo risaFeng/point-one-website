@@ -46,47 +46,47 @@ const ProductsSection: React.FC = () => {
 
   const productIcons = [
     {
-      imagePath: "public/lovable-uploads/6a212e70-ae67-4ecd-af76-a3ef901eb0de.png",
+      imagePath: "/lovable-uploads/6a212e70-ae67-4ecd-af76-a3ef901eb0de.png",
       bgColor: "bg-purple-500"
     },
     {
-      imagePath: "public/lovable-uploads/e2218545-17d7-44b4-b344-45ba064cfe4d.png",
+      imagePath: "/lovable-uploads/e2218545-17d7-44b4-b344-45ba064cfe4d.png",
       bgColor: "bg-black"
     },
     {
-      imagePath: "public/lovable-uploads/7321e04a-82c2-4dff-bdb5-8ba68486cbab.png",
+      imagePath: "/lovable-uploads/7321e04a-82c2-4dff-bdb5-8ba68486cbab.png",
       bgColor: "bg-pink-500"
     },
     {
-      imagePath: "public/lovable-uploads/2b5fe4ae-eae5-42f9-b1cf-7874dbe02708.png",
+      imagePath: "/lovable-uploads/2b5fe4ae-eae5-42f9-b1cf-7874dbe02708.png",
       bgColor: "bg-purple-600"
     },
     {
-      imagePath: "public/lovable-uploads/8ba68486cbab.png",
+      imagePath: "/lovable-uploads/1407bd8e-748d-4e92-9a9e-82e6b92ba209.png",
       bgColor: "bg-yellow-500"
     },
     {
-      imagePath: "public/lovable-uploads/b2555d01-158c-46d3-aa18-410571289fdb.png",
+      imagePath: "/lovable-uploads/b2555d01-158c-46d3-aa18-410571289fdb.png",
       bgColor: "bg-purple-400"
     },
     {
-      imagePath: "public/lovable-uploads/ea5ab59e-aa24-4ded-aadc-0acaeccf7c5a.png",
+      imagePath: "/lovable-uploads/ea5ab59e-aa24-4ded-aadc-0acaeccf7c5a.png",
       bgColor: "bg-black"
     },
     {
-      imagePath: "public/lovable-uploads/c9483916-2a63-412c-831e-b1f8332b54f0.png",
+      imagePath: "/lovable-uploads/c9483916-2a63-412c-831e-b1f8332b54f0.png",
       bgColor: "bg-black"
     },
     {
-      imagePath: "public/lovable-uploads/4c43cd78-bb95-46d0-aa16-0fafcb420d0b.png",
+      imagePath: "/lovable-uploads/4c43cd78-bb95-46d0-aa16-0fafcb420d0b.png",
       bgColor: "bg-pink-500"
     },
     {
-      imagePath: "public/lovable-uploads/1407bd8e-748d-4e92-9a9e-82e6b92ba209.png",
+      imagePath: "/lovable-uploads/1407bd8e-748d-4e92-9a9e-82e6b92ba209.png",
       bgColor: "bg-purple-300"
     },
     {
-      imagePath: "public/lovable-uploads/f14f2db9-589e-4d1e-ae2a-2e0275fce42d.png",
+      imagePath: "/lovable-uploads/f14f2db9-589e-4d1e-ae2a-2e0275fce42d.png",
       bgColor: "bg-black"
     }
   ];
