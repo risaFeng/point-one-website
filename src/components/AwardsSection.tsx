@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
@@ -10,22 +11,22 @@ const AwardsSection: React.FC = () => {
 
   const awardsData = [
     {
-      title: t('awards.2022.item1'),
+      title: t('awards.2022.item1.cleaned'),
       year: '2022',
       icon: <Trophy className="text-black" size={24} />
     },
     {
-      title: t('awards.2022.item2'),
+      title: t('awards.2022.item2.cleaned'),
       year: '2022',
       icon: <Trophy className="text-black" size={24} />
     },
     {
-      title: t('awards.2022.item3'),
+      title: t('awards.2022.item3.cleaned'),
       year: '2022',
       icon: <Trophy className="text-black" size={24} />
     },
     {
-      title: t('awards.2024.item1'),
+      title: t('awards.2024.item1.cleaned'),
       year: '2024',
       icon: <Award className="text-black" size={24} />
     }
@@ -57,7 +58,7 @@ const AwardsSection: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {awardsData.map((award, index) => (
             <motion.div
               key={index}
