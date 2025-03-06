@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
-import { Users, Linkedin, Twitter } from 'lucide-react';
+import { Users, Twitter } from 'lucide-react';
 
 const FoundersSection: React.FC = () => {
   const { t } = useLanguage();
@@ -13,19 +13,17 @@ const FoundersSection: React.FC = () => {
     {
       name: t('founders.risa.name'),
       bio: t('founders.risa.bio'),
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "/lovable-uploads/4730bc85-9a92-4e80-81eb-253106d3a071.png", // Risa's new image
       socials: [
         { icon: <Twitter size={18} />, url: '#' },
-        { icon: <Linkedin size={18} />, url: '#' },
       ]
     },
     {
       name: t('founders.shawn.name'),
       bio: t('founders.shawn.bio'),
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "/lovable-uploads/49121768-815e-429c-ad37-72e44dd1154b.png", // Shawn's new image
       socials: [
         { icon: <Twitter size={18} />, url: '#' },
-        { icon: <Linkedin size={18} />, url: '#' },
       ]
     }
   ];
