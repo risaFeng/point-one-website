@@ -6,6 +6,9 @@ import ProductsSection from '@/components/ProductsSection';
 import InvestorsSection from '@/components/InvestorsSection';
 import ContactSection from '@/components/ContactSection';
 import LanguageToggle from '@/components/LanguageToggle';
+import CompanyHistory from '@/components/CompanyHistory';
+import AwardsSection from '@/components/AwardsSection';
+import FoundersSection from '@/components/FoundersSection';
 import { LanguageProvider } from '@/context/LanguageContext';
 
 const Index = () => {
@@ -35,7 +38,10 @@ const Index = () => {
         <LanguageToggle />
         <HeroSection />
         <CompanyInfo />
+        <CompanyHistory />
         <ProductsSection />
+        <AwardsSection />
+        <FoundersSection />
         <InvestorsSection />
         <ContactSection />
       </div>

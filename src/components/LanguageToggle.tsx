@@ -19,7 +19,8 @@ const LanguageToggle: React.FC<LanguageToggleProps> = ({ className }) => {
     <div className={cn('fixed top-5 right-5 z-50', className)}>
       <button
         onClick={toggleLanguage}
-        className="lang-switch flex items-center space-x-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm hover:bg-white transition-all duration-300"
+        className="lang-switch flex items-center space-x-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-sm border border-gray-200 shadow-sm hover:bg-white transition-all duration-300"
+        aria-label={language === 'zh' ? 'Switch to English' : '切换到中文'}
       >
         <span className="text-sm font-medium">
           {language === 'zh' ? 'English' : '中文'}
