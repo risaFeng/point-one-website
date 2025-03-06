@@ -52,12 +52,6 @@ const HeroSection: React.FC = () => {
           >
             {t('hero.cta')}
           </button>
-          <button 
-            onClick={scrollToNextSection}
-            className="notion-button-outline"
-          >
-            {t('learn.more')}
-          </button>
         </motion.div>
       </div>
       
