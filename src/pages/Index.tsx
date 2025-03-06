@@ -1,10 +1,8 @@
-
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import AppIconsCarousel from '@/components/AppIconsCarousel';
 import CompanyInfo from '@/components/CompanyInfo';
 import ProductsSection from '@/components/ProductsSection';
-import InvestorsSection from '@/components/InvestorsSection';
 import ContactSection from '@/components/ContactSection';
 import LanguageToggle from '@/components/LanguageToggle';
 import CompanyHistory from '@/components/CompanyHistory';
@@ -13,7 +11,6 @@ import FoundersSection from '@/components/FoundersSection';
 import { LanguageProvider } from '@/context/LanguageContext';
 
 const Index = () => {
-  // Add scroll reveal effect
   useEffect(() => {
     const handleScroll = () => {
       const revealElements = document.querySelectorAll('.reveal');
@@ -44,7 +41,6 @@ const Index = () => {
         <ProductsSection />
         <AwardsSection />
         <FoundersSection />
-        <InvestorsSection />
         <ContactSection />
       </div>
     </LanguageProvider>
