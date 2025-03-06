@@ -22,8 +22,8 @@ const translations = {
   'about.title.en': 'About Us',
   'about.subtitle.zh': '专注于全球移动娱乐与AI技术的融合',
   'about.subtitle.en': 'Focused on the fusion of global mobile entertainment and AI technology',
-  'about.description.zh': 'Point One是一家全球领先的科技公司，专注于移动娱乐游戏与人工智能领域。我们的使命是通过创新技术赋能全球用户，打破地域与文化的限制。凭借强大的AI研发团队和全球化视野，我们成功开发了10多款应用产品，覆盖全球175个国家，产品总下载量突破1亿次。我们的AI游戏UGC平台让玩家从游戏参与者转变为内容创作者，而我们的全球AI消费产品则致力于消除语言障碍，促进世界各地用户的无缝交流与连接。',
-  'about.description.en': 'Point One is a globally leading technology company focused on mobile entertainment games and artificial intelligence. Our mission is to empower users worldwide through innovative technology, breaking geographical and cultural limitations. With a powerful AI R&D team and global vision, we have successfully developed over 10 application products, covering 175 countries worldwide with total downloads exceeding 100 million. Our AI game UGC platform transforms players from game participants into content creators, while our global AI consumer products are dedicated to eliminating language barriers and facilitating seamless communication and connection among users worldwide.',
+  'about.description.zh': 'Point One是一家全球领先的科技公司，专注于移动娱乐游戏与人工智能领域。我们的使命是通过创新技术赋能全球用户，打破地域与文化的限制。凭借强大的AI研发团队和全球化视野，我们成功开发了10多款应用产品，覆盖全球175个国家，产品总下载量突破1亿次。我们的AI游戏UGC平台让玩家从游戏参与者转变为内容创作者，而我们的全球AI消费产品则致力于用人工智能技术解决实际问题，在各种场景中为全球用户提供真实价值。',
+  'about.description.en': 'Point One is a globally leading technology company focused on mobile entertainment games and artificial intelligence. Our mission is to empower users worldwide through innovative technology, breaking geographical and cultural limitations. With a powerful AI R&D team and global vision, we have successfully developed over 10 application products, covering 175 countries worldwide with total downloads exceeding 100 million. Our AI game UGC platform transforms players from game participants into content creators, while our global AI consumer products are dedicated to solving real problems with AI technology, providing genuine value to global users in various scenarios.',
   
   // Company History Section
   'history.title.zh': '发展历程',
