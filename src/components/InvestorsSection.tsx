@@ -45,9 +45,9 @@ const InvestorsSection: React.FC = () => {
   ];
 
   return (
-    <section id="investors" className="py-20 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 z-0"></div>
+    <section id="investors" className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
+      {/* Subtle dots background */}
+      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px] opacity-30"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div 
@@ -58,11 +58,11 @@ const InvestorsSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-indigo-100 text-indigo-800 text-xs font-medium px-3 py-1 rounded-full">
+            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
               {t('backed.by')}
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight">
             {t('investors.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -77,19 +77,19 @@ const InvestorsSection: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="mb-16"
         >
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
             {investors.map((investor, index) => (
               <motion.div
                 key={`investor-${index}`}
                 className="flex items-center justify-center"
-                whileHover={{ y: -8, scale: 1.05 }}
+                whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="w-full h-24 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-lg transition-all p-4">
+                <div className="w-full h-24 flex items-center justify-center bg-white rounded-lg shadow-sm border border-gray-100 hover:border-black transition-all duration-300 p-4">
                   <img 
                     src={investor.logoSrc}
                     alt={`${investor.name} logo`}
-                    className="max-h-full max-w-full object-contain transition-all duration-300"
+                    className="max-h-full max-w-full object-contain transition-all duration-300 grayscale hover:grayscale-0"
                   />
                 </div>
               </motion.div>
@@ -103,7 +103,7 @@ const InvestorsSection: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="mt-8 text-center"
         >
-          <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 text-gray-800 text-sm font-medium">
+          <div className="inline-block px-6 py-3 rounded-full bg-gray-100 text-gray-800 text-sm font-medium">
             {t('multiple.rounds')}
           </div>
         </motion.div>

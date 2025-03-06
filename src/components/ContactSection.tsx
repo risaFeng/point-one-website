@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
-import { Mail, MapPin, Globe, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Globe, TwitterIcon, Instagram, Linkedin } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   const { t } = useLanguage();
@@ -11,32 +11,31 @@ const ContactSection: React.FC = () => {
 
   const contactInfo = [
     {
-      icon: <Mail className="text-blue-600" size={24} />,
+      icon: <Mail className="text-black" size={24} />,
       title: t('contact.email'),
       detail: 'contact@pointone.tech',
     },
     {
-      icon: <MapPin className="text-blue-600" size={24} />,
+      icon: <MapPin className="text-black" size={24} />,
       title: t('contact.location'),
       detail: 'Beijing, China | San Francisco, USA',
     },
     {
-      icon: <Globe className="text-blue-600" size={24} />,
+      icon: <Globe className="text-black" size={24} />,
       title: t('contact.social'),
       detail: t('contact.social'),
       socials: [
-        { icon: <Twitter size={20} />, url: 'https://twitter.com' },
-        { icon: <Instagram size={20} />, url: 'https://instagram.com' },
-        { icon: <Linkedin size={20} />, url: 'https://linkedin.com' },
+        { icon: <TwitterIcon size={18} />, url: 'https://twitter.com' },
+        { icon: <Instagram size={18} />, url: 'https://instagram.com' },
+        { icon: <Linkedin size={18} />, url: 'https://linkedin.com' },
       ]
     }
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 relative overflow-hidden">
+    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-black text-white relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-blue-100 to-transparent opacity-50 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-purple-100 to-transparent opacity-50 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] [background-size:20px_20px]"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div 
@@ -47,14 +46,14 @@ const ContactSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">
+            <span className="bg-white text-black text-xs font-medium px-4 py-1.5 rounded-full">
               {t('get.in.touch')}
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight">
             {t('contact.title')}
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             {t('contact.subtitle')}
           </p>
         </motion.div>
@@ -66,10 +65,10 @@ const ContactSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
+              className="bg-white text-black p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
             >
               <div className="flex items-center mb-4">
-                <div className="p-3 rounded-lg bg-blue-50 mr-4">
+                <div className="p-3 rounded-lg bg-gray-100 mr-4">
                   {item.icon}
                 </div>
                 <h3 className="font-semibold text-lg">{item.title}</h3>
@@ -82,7 +81,7 @@ const ContactSection: React.FC = () => {
                     <a
                       key={idx}
                       href={social.url}
-                      className="p-2 rounded-full bg-gray-50 hover:bg-gray-100 transition-colors duration-300"
+                      className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -102,7 +101,14 @@ const ContactSection: React.FC = () => {
           className="mt-16 text-center"
         >
           <footer>
-            <p className="text-gray-500 text-sm">
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/e5584db9-2ecc-46c8-9de8-27652bd787b1.png" 
+                alt="Point One Logo" 
+                className="h-16"
+              />
+            </div>
+            <p className="text-gray-400 text-sm">
               {t('footer.copyright')}
             </p>
           </footer>

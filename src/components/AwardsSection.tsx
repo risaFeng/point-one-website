@@ -17,29 +17,28 @@ const AwardsSection: React.FC = () => {
         t('awards.2022.item2'),
         t('awards.2022.item3')
       ],
-      icon: <Trophy className="text-yellow-500" size={24} />
+      icon: <Trophy className="text-black" size={24} />
     },
     {
       year: t('awards.2023.title'),
       awards: [
         t('awards.2023.item1')
       ],
-      icon: <Star className="text-yellow-500" size={24} />
+      icon: <Star className="text-black" size={24} />
     },
     {
       year: t('awards.2024.title'),
       awards: [
         t('awards.2024.item1')
       ],
-      icon: <Award className="text-yellow-500" size={24} />
+      icon: <Award className="text-black" size={24} />
     }
   ];
 
   return (
-    <section id="awards" className="py-20 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-yellow-100 to-transparent opacity-50 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tr from-orange-100 to-transparent opacity-50 rounded-full blur-3xl"></div>
+    <section id="awards" className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
+      {/* Subtle dots background */}
+      <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px] opacity-30"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div 
@@ -50,11 +49,11 @@ const AwardsSection: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="inline-block mb-3">
-            <span className="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full">
+            <span className="bg-black text-white text-xs font-medium px-4 py-1.5 rounded-full">
               BUD
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-6 tracking-tight">
             {t('awards.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -69,10 +68,10 @@ const AwardsSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-yellow-100"
+              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 hover:border-black"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 rounded-lg bg-yellow-50 mr-4">
+                <div className="p-3 rounded-lg bg-gray-100 mr-4">
                   {yearData.icon}
                 </div>
                 <h3 className="font-bold text-xl">{yearData.year}</h3>
@@ -81,7 +80,7 @@ const AwardsSection: React.FC = () => {
               <ul className="space-y-4">
                 {yearData.awards.map((award, idx) => (
                   <li key={idx} className="flex">
-                    <span className="text-yellow-500 mr-2">•</span>
+                    <span className="text-black mr-2">•</span>
                     <span className="text-gray-700">{award}</span>
                   </li>
                 ))}
@@ -94,7 +93,7 @@ const AwardsSection: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="text-center mt-12 text-gray-700"
+          className="text-center mt-12 text-gray-600"
         >
           {t('awards.conclusion')}
         </motion.p>
