@@ -1,7 +1,6 @@
 
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
-import AppIconsCarousel from '@/components/AppIconsCarousel';
 import CompanyInfo from '@/components/CompanyInfo';
 import ProductsSection from '@/components/ProductsSection';
 import ContactSection from '@/components/ContactSection';
@@ -37,7 +36,6 @@ const Index = () => {
       <div className="min-h-screen overflow-x-hidden">
         <LanguageToggle />
         <HeroSection />
-        <AppIconsCarousel />
         <CompanyInfo />
         <CompanyHistory />
         <ProductsSection />
