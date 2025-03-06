@@ -66,7 +66,7 @@ const FoundersSection: React.FC = () => {
                   </h3>
                   
                   <div className="mb-6 overflow-hidden rounded-xl w-32 h-40 mx-auto shadow-md group-hover:shadow-lg transition-all duration-300 border-2 border-gray-100 group-hover:border-black">
-                    <div className="w-full h-full overflow-hidden grayscale">
+                    <div className="w-full h-full overflow-hidden">
                       <img 
                         src={founder.image} 
                         alt={founder.name} 
