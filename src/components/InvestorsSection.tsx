@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
@@ -9,46 +8,46 @@ const InvestorsSection: React.FC = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   const [imgErrors, setImgErrors] = useState<{[key: string]: boolean}>({});
 
-  // Investor logos array with the uploaded image
+  // Investor logos array with the correct image paths
   const investors = [
     { 
       name: 'Peak XV',
-      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png', 
+      logo: '/lovable-uploads/61875c02-8df5-481d-8d9e-38bfc7c8a807.png', 
       fallback: '/placeholder.svg'
     },
     { 
       name: 'Sky9 Capital',
-      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
+      logo: '/lovable-uploads/1c589203-fc7f-4349-b616-6ea253e78e0c.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'Source Code Capital',
-      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
+      logo: '/lovable-uploads/e8bce3a2-005c-4fea-a777-45d5e060cb04.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'Qiming Ventures',
-      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
+      logo: '/lovable-uploads/69e8ad10-f7f6-4373-86db-3cd29baf85b6.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'Northern Light VC',
-      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
+      logo: '/lovable-uploads/62f2fc7d-f501-4525-9cc7-0d22119e6c12.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'NetEase',
-      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
+      logo: '/lovable-uploads/ad9e47a7-6437-40ca-81b8-662e0e80b451.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'ClearVue',
-      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
+      logo: '/lovable-uploads/d77e6b07-aa38-47cb-b669-8804c50c322c.png',
       fallback: '/placeholder.svg'
     },
     { 
       name: 'GraniteAsia',
-      logo: '/lovable-uploads/c14a61fc-1337-4388-a619-9973d67220c0.png',
+      logo: '/lovable-uploads/393260df-da81-4730-9ce4-256f739afda6.png',
       fallback: '/placeholder.svg'
     }
   ];
