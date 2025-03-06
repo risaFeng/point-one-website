@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
@@ -24,11 +23,6 @@ const AwardsSection: React.FC = () => {
       title: t('awards.2022.item3'),
       year: '2022',
       icon: <Trophy className="text-black" size={24} />
-    },
-    {
-      title: t('awards.2023.item1'),
-      year: '2023',
-      icon: <Star className="text-black" size={24} />
     },
     {
       title: t('awards.2024.item1'),
