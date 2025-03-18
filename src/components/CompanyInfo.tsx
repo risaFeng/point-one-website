@@ -3,11 +3,14 @@ import React, { useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, useInView } from 'framer-motion';
 import { Medal } from 'lucide-react';
+import { AspectRatio } from './ui/aspect-ratio';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const CompanyInfo: React.FC = () => {
   const { t } = useLanguage();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isMobile = useIsMobile();
 
   return (
     <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
@@ -35,7 +38,7 @@ const CompanyInfo: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
@@ -72,9 +75,21 @@ const CompanyInfo: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="relative"
+            className="relative h-full flex items-center justify-center"
           >
-            {/* The JavaScript logo box has been removed */}
+            <div className="w-full max-w-md mx-auto">
+              <AspectRatio ratio={isMobile ? 3/4 : 4/3} className="bg-gray-100 rounded-xl overflow-hidden border border-gray-200">
+                <div className="w-full h-full flex items-center justify-center p-8">
+                  <div className="flex flex-col items-center justify-center text-center space-y-4">
+                    <div className="w-20 h-20 bg-black rounded-full flex items-center justify-center">
+                      <span className="text-white text-3xl font-bold">AI</span>
+                    </div>
+                    <h3 className="text-xl font-bold">Artificial Intelligence</h3>
+                    <p className="text-gray-500">Powering the future of technology</p>
+                  </div>
+                </div>
+              </AspectRatio>
+            </div>
           </motion.div>
         </div>
       </div>
